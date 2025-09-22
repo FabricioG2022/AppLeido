@@ -58,7 +58,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="64dp"
         android:text="EMAIL"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -108,11 +108,11 @@
         android:id="@+id/login_button"
         android:layout_width="350dp"
         android:layout_height="70dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="72dp"
         android:background="@drawable/boton_inicio_sesion_personalizado"
         android:text="INICIAR SESIÓN"
-        android:textSize="18sp"
         android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,4 +145,5 @@
         app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

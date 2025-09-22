@@ -23,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
 
-        // Ajuste de los bordes de la pantalla, debe ir aquí
+        // Ajuste de los bordes de la pantalla
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -34,27 +34,24 @@ public class LoginActivity extends AppCompatActivity {
         etNombreUsuario = findViewById(R.id.et_nombre_usuario);
         etContrasena = findViewById(R.id.et_contrasena);
 
-        // Ejemplo: Obtener los datos al presionar un botón
+        // Lógica del botón de login
         Button loginButton = findViewById(R.id.login_button);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Obtener el texto de los EditText
                 String nombreUsuario = etNombreUsuario.getText().toString();
                 String contrasena = etContrasena.getText().toString();
-
-                // Aquí puedes usar las variables (por ejemplo, para validar)
-                // System.out.println("Usuario: " + nombreUsuario);
-                // System.out.println("Contraseña: " + contrasena);
+                // Aquí va la lógica de autenticación (ej. ir a HomeActivity)
             }
         });
-        TextView registroLink = findViewById(R.id.registro_link);
 
+        // Lógica del enlace de registro
+        TextView registroLink = findViewById(R.id.registro_link);
         registroLink.setOnClickListener(v -> {
-            // Crea un Intent para ir a la pantalla de registro
             Intent intent = new Intent(LoginActivity.this, RegistroActivity.class);
-            // Inicia la nueva Activity
             startActivity(intent);
         });
+
+        // NOTA: El código para el CheckBox debe ir en RegistroActivity.java
     }
 }

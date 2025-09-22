@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">AppLeido</string>
     <string name="nombre_app">L</string>
+    <string name="terminos_y_condiciones">He leído y acepto </string>
+    <string name="politica_privacidad">la política de privacidad</string>
+    <string name="terminos_de_uso">y los términos y condiciones de Uso</string>
 </resources>
