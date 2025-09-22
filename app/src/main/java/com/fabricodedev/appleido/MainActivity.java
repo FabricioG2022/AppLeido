@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton miBoton;
         miBoton = findViewById(R.id.imageButton5);
         miBoton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, Login.class);
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
         });
 
