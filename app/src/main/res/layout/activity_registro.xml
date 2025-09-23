@@ -158,7 +158,7 @@
         android:id="@+id/register_button"
         android:layout_width="350dp"
         android:layout_height="70dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="92dp"
         android:background="@drawable/boton_inicio_sesion_personalizado"
         android:text="REGISTRARSE"
         android:textColor="@color/white"
@@ -196,4 +196,17 @@
         app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toEndOf="@+id/estas_registrado"
         app:layout_constraintTop_toBottomOf="@+id/register_button" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="He leido y acepto la política de privacidad\n
+        y los términos y condiciones de uso."
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_contrasenia2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
