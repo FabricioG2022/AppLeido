@@ -8,7 +8,7 @@
     tools:context=".RegistroActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nombre_logo"
         android:layout_width="57dp"
         android:layout_height="85dp"
         android:autoSizeTextType="uniform"
@@ -43,21 +43,22 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
         android:text="eído"
         android:textColor="#0097A7"
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/nombre_logo"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.097" />
 
     <EditText
         android:id="@+id/et_nombre_usuario"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:hint="Ingresa tu usuario"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,11 +82,14 @@
         android:id="@+id/nombre_registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="NOMBRE DE USUARIO"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="182dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/email_registro"
@@ -117,11 +121,11 @@
         android:id="@+id/et_contrasenia"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:hint="Ingresa tu contraseña"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contrasenia_registro" />
 
@@ -129,7 +133,7 @@
         android:id="@+id/et_contrasenia2"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:hint="Reingresa tu contraseña"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -141,7 +145,7 @@
         android:id="@+id/et_confirmar_contrasenia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:text="CONFIRMAR CONTRASEÑA"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -181,7 +185,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginEnd="28dp"
         android:clickable="true"
         android:focusable="true"
         android:text="Inicia sesión aquí"
@@ -189,7 +193,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toEndOf="@+id/estas_registrado"
         app:layout_constraintTop_toBottomOf="@+id/register_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

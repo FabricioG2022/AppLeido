@@ -16,6 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class LoginActivity extends AppCompatActivity {
     private EditText etNombreUsuario;
     private EditText etContrasena;
+    private TextView registroLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,12 +47,11 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         // Lógica del enlace de registro
-        TextView registroLink = findViewById(R.id.registro_link);
+        registroLink = findViewById(R.id.registro_link);
         registroLink.setOnClickListener(v -> {
             Intent intent = new Intent(LoginActivity.this, RegistroActivity.class);
             startActivity(intent);
         });
 
-        // NOTA: El código para el CheckBox debe ir en RegistroActivity.java
     }
 }
